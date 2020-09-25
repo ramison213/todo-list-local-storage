@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana;
+}
+
+input, button {
+    height: 46px;
+    padding: 10px; 
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-family: inherit;
+    font-size: 18px;
+}
+
+input {
+    width: 100%;
+}
+
+.btn {
+    width: 20%;
+    vertical-align: top; 
+    cursor: pointer;   
+    background-color: lightgray;   
+}
+
+.hide-btn {
+    width: 10%;
+    background-image: url(images/eye.png);
+    background-repeat: no-repeat;
+    background-size: 35px 25px;
+    background-position: center;
+    outline: 0;
+}
+
+.hide-btn-active {
+    opacity: 0.4;
+}
+
+.done-item-hidden .done {
+    display: none;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.task {
+    position: relative;
+    padding: 10px;
+    padding-right: 70px;
+    background-color: snow;
+    margin-bottom: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.done {
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
+.done-btn {
+    position: absolute;
+    right: 45px;
+    top: calc(50% - 8px);
+    width: 16px;
+    height: 16px;
+    background: url(images/check-mark.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.done-btn:hover {
+    transform: scale(1.15);
+    transition: .2s;
+}
+
+.rem-btn {
+    position: absolute;
+    right: 20px;
+    top: calc(50% - 8px);
+    width: 16px;
+    height: 16px;
+    background: url(images/delete.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.rem-btn:hover { 
+    transform: scale(1.15);
+    transition: .2s;
+}
+
+.input-warning {
+    display: none;
+    font-size: 12px;
+    padding: 10px;
+    color: red;
+}
+
+.input-wrap {
+    width: 67%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}

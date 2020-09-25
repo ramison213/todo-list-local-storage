@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>TodoList with localstorage</title>
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">TODO LIST (JS with Local Storage)</h1>
+        <div class="flex-container">
+            <div class="input-wrap">
+                <input
+                    type="text"
+                    id="new-task-field"
+                    placeholder="Enter new task"
+                >
+                <label
+                    for="new-task-field"
+                    class="input-warning"
+                >* обязательное поле</label>
+            </div>
+            <button
+                id="add-btn"
+                class="btn"
+            >ADD</button>
+            <button
+                id="hide-btn"
+                class="btn hide-btn"
+            ></button>
+        </div>
+        <ul id="list-task"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
